@@ -1,5 +1,6 @@
 ## Web Beer 
-get a display of information of beers an using and API, get a web page for the use of showing the information.
+Get a display of information of beers an using and API, get a web page for the use of showing the information.
+making display of the information of some beer where the people can get some amazing beer with the history of the beers
 
 
 ### `yarn start`

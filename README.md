@@ -5,6 +5,12 @@ making an esasy display of the information of some beer where the people can get
 ## React
 Using the plataform of react I build some backgorund and Front-End to show information about beers, using an API.
 
+# Use this Api to display the information
+https://punkapi.com/documentation/v2
+
+# React Native 
+Using this example for getting the card and get information, in a best way I read it and code a better display information.
+https://callstack.github.io/react-native-paper/card.html
 
 ### `yarn start`
 

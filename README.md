@@ -12,6 +12,7 @@ https://punkapi.com/documentation/v2
 
 # Get a beer 
 Gets beers from the api, you can apply several filters using url paramaters, the available options are listed below.
+to display it in the App with the information of the beer!
 
 
 # React Native 

@@ -17,6 +17,13 @@ to display it in the App with the information of the beer!
 
 # React Native 
 Using this example for getting the card and get information, in a best way I read it and code a better display information.
+Note: If you are using react-native version 0.60 or higher you don't need to link react-native-vector-icons.
+
+Wrap your root component in Provider from react-native-paper. If you have a vanilla React Native project, it's a good idea to add it in the component which is passed to AppRegistry.registerComponent. 
+
+If you don't want to install vector icons, you can use babel-plugin-optional-require to opt-out.
+
+If you use Expo, you don't need to install vector icons. But if you have a babel.config.js or .babelrc file, make sure that it includes babel-preset-expo.
 https://callstack.github.io/react-native-paper/card.html
 
 ### `yarn start`

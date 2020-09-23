@@ -28,11 +28,8 @@ If you don't want to install vector icons, you can use babel-plugin-optional-req
 If you use Expo, you don't need to install vector icons. But if you have a babel.config.js or .babelrc file, make sure that it includes babel-preset-expo.
 https://callstack.github.io/react-native-paper/card.html
 
-### `yarn start`
+## Hooks for get the Data of the API that display the beer
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+
 

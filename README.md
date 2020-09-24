@@ -30,6 +30,10 @@ https://callstack.github.io/react-native-paper/card.html
 
 ## Hooks for get the Data of the API that display the beer
 
+To solve this, Hooks let you split one component into smaller functions based on what pieces are related (such as setting up a subscription or fetching data), rather than forcing a split based on lifecycle methods. You may also opt into managing the component’s local state with a reducer to make it more predictable.
+We’ll discuss this more in Using the Effect Hook.
+
+## Effect Hooks
 
 
 

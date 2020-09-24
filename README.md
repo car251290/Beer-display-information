@@ -34,6 +34,6 @@ To solve this, Hooks let you split one component into smaller functions based on
 We’ll discuss this more in Using the Effect Hook.
 
 ## Effect Hooks
-
+Hooks let us split the code based on what it is doing rather than a lifecycle method name. React will apply every effect used by the component, in the order they were specified.
 
 

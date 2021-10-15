@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Header from './componets/header';
-import Beers from './componets/beers';
+import Header from './componets/Header/header';
+import Beers from './componets/Beer/beers';
 import './styles/style.css';
 import './App.css'
 
 class App extends Component {
+  //' https://api.openbrewerydb.org/breweries'
   constructor() {
     super();
 

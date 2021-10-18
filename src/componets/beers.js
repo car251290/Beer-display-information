@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-//import '../styles/style.css'
 import { Typography,Card, CardContent,Box,CardMedia} from '@material-ui/core';
 import useStyles from './style';
 
 class Beers extends Component {
  
   render () {
-   //const classes = useStyles();
+
     const items = this.props.beers.map((beer) => {
       
       return (

@@ -1,41 +1,38 @@
-import React, { Component } from 'react';
+import React, {useEffect, useState } from 'react';
 import { render } from 'react-dom';
 import Header from './componets/Header/header';
 import Beers from './componets/Beer/beers';
 import './styles/style.css';
 import './App.css'
+import {  getBeerData } from './componets/Api/index';
 
-class App extends Component {
-  //' https://api.openbrewerydb.org/breweries'
-  constructor() {
-    super();
+const App = () => {
+  const [beers, setbeers] = useState([])
+ 
+ useEffect (() => {
+   let beers = true;
+   getBeerData()
+   .then(items => {
+     if(beers){
+       setbeers(items)
+     }
+   })
+   return () => beers = false;
+   //.then((data)=> {setbeers([])})
 
-    this.state = {
-      beers: []
-    }
-  }
-
-  componentDidMount() {
-    fetch(' https://api.punkapi.com/v2/beers').then((response) => {
-      return response.json();
-    }).then((data) => {
-      console.log(data);
-      this.setState({
-        beers: data
-      })
-    })
-  }
-
-  render() {
+ },[]);
+  
     return (
-      <div className= 'main-container'>
-        <Header />
-        <Beers beers={this.state.beers} />
-      </div>
+    <>
+     
+     <Header />
+        <Beers beers={setbeers} />
+        
+        {beers.map(items => items.name)}
+        
+    </>
     );
-  }
-}
-
-render(<App />, document.getElementById('root'));
+  
+};
 
 export default App;

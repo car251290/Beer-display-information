@@ -25,6 +25,9 @@ https://callstack.github.io/react-native-paper/card.html
 To solve this, Hooks let you split one component into smaller functions based on what pieces are related (such as setting up a subscription or fetching data), rather than forcing a split based on lifecycle methods. You may also opt into managing the component’s local state with a reducer to make it more predictable.
 We’ll discuss this more in Using the Effect Hook.
 
+## Importing Axios
+
+
 ## Effect Hooks
 Hooks let us split the code based on what it is doing rather than a lifecycle method name. React will apply every effect used by the component, in the order they were specified.
 

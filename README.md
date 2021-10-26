@@ -30,6 +30,18 @@ We’ll discuss this more in Using the Effect Hook.
 Sending GET Requests
 Let's send our first request with Axios! It will be a GET request, typically used to retrieve data.
 
+const axios = require('axios').default;
+
+axios.get('https://jsonplaceholder.typicode.com/posts')
+    .then(resp => {
+        console.log(resp.data);
+    })
+    .catch(err => {
+        // Handle Error Here
+        console.error(err);
+    });
+To make a GET request, we pass the URL of the resource as the argument in the axios.get() method.
+
 We will make an HTTP request to an external API that sends us a list of blog posts. Upon receiving the data, we'll log it's contents to the console. If we encounter an error, we'll log that too.
 
 

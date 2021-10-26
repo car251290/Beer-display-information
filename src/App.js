@@ -24,25 +24,21 @@ const App = () => {
   
     return (
     <>
+    <cssBaseline/>
      <Header />
-
         <Card elevation={6} display="flex">
-        {beers.map(items => items.name)}
-       
-        <CardContent style= {{backgroundColor:"#F28304"}}>
-        <Typography gutterBotton variant="h5">{beers.map(items => items.name)} </Typography>
-        <Box display="flex-wrap" justifyContent="space-between" my={2} alignItems="center">
-        </Box>
-
-        <Box display="flex" justifyContent="space-between">
+          <CardContent style = {{backgroundColor:"#F28304"}}>
+        {beers.map(items => 
+          <Grid tem xs={12}>
+            {items.name}
+          </Grid> )}
+          <Box display="flex" justifyContent="space-between">
           <Typography component="legend">description</Typography>
           <Typography gutterBottom variant="subtitle1">
             {beers.map(items => (items.description))}
           </Typography>
         </Box>
-
-        </CardContent>
-
+       </CardContent>
         </Card>
   
     </>

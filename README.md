@@ -27,6 +27,11 @@ We’ll discuss this more in Using the Effect Hook.
 
 ## Importing Axios
 
+Sending GET Requests
+Let's send our first request with Axios! It will be a GET request, typically used to retrieve data.
+
+We will make an HTTP request to an external API that sends us a list of blog posts. Upon receiving the data, we'll log it's contents to the console. If we encounter an error, we'll log that too.
+
 
 ## Effect Hooks
 Hooks let us split the code based on what it is doing rather than a lifecycle method name. React will apply every effect used by the component, in the order they were specified.

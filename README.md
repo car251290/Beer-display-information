@@ -17,6 +17,8 @@ to display it in the App with the information of the beer!
 Using the plataform of react I build some backgorund and Front-End to show information about beers, using an API.
 The React homepage contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result.
 
+Using props and state, we can put together a small Todo application. This example uses state to track the current list of items as well as the text that the user has entered.
+
 If you use Expo, you don't need to install vector icons. But if you have a babel.config.js or .babelrc file, make sure that it includes babel-preset-expo.
 https://callstack.github.io/react-native-paper/card.html
 
@@ -43,7 +45,6 @@ axios.get('https://jsonplaceholder.typicode.com/posts')
 To make a GET request, we pass the URL of the resource as the argument in the axios.get() method.
 
 We will make an HTTP request to an external API that sends us a list of blog posts. Upon receiving the data, we'll log it's contents to the console. If we encounter an error, we'll log that too.
-
 
 ## Effect Hooks
 Hooks let us split the code based on what it is doing rather than a lifecycle method name. React will apply every effect used by the component, in the order they were specified.
